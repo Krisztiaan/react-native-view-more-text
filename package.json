@@ -19,5 +19,8 @@
     "text",
     "react-native-view-more-text"
   ],
-  "author": "nlt2390"
+  "author": "nlt2390",
+  "dependencies": {
+    "prop-types": "^15.6.0"
+  }
 }

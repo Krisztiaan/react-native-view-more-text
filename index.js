@@ -1,20 +1,22 @@
 import React from 'react';
 import { Text, View, TouchableOpacity } from 'react-native';
+import PropTypes from 'prop-types';
+
 
 const emptyFunc = ()=>{};
 
 export default ViewMoreText = React.createClass({
   propTypes: {
-    style: React.PropTypes.oneOfType([
-      React.PropTypes.number,
-      React.PropTypes.array,
-      React.PropTypes.object,
+    style: PropTypes.oneOfType([
+      PropTypes.number,
+      PropTypes.array,
+      PropTypes.object,
     ]),
-    renderViewMore: React.PropTypes.func,
-    renderViewLess: React.PropTypes.func,
-    afterCollapse: React.PropTypes.func,
-    afterExpand: React.PropTypes.func,
-    numberOfLines: React.PropTypes.number.isRequired
+    renderViewMore: PropTypes.func,
+    renderViewLess: PropTypes.func,
+    afterCollapse: PropTypes.func,
+    afterExpand: PropTypes.func,
+    numberOfLines: PropTypes.number.isRequired
   },
   isTruncated: false,
   originalHeight: 0,
